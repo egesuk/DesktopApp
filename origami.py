@@ -20,18 +20,18 @@ win.title("origami")
 win.geometry("400x200")
 
 # 部品を作成 --- (*3)
-labelHeight = tk.Label(win, text=u'なんメートル？')
+labelHeight = tk.Label(win, text='なんメートル？', pady=20)
 labelHeight.pack()
 
 textHeight = tk.Entry(win)
 textHeight.pack()
 
-labelResult = tk.Label(win, text=u'---')
-labelResult.pack()
-
-calcButton = tk.Button(win, text=u'計算')
+calcButton = tk.Button(win, text='おけ', padx=3, pady=3)
 calcButton["command"] = calc_paper
 calcButton.pack()
+
+labelResult = tk.Label(win, text='')
+labelResult.pack()
 
 # ウィンドウを動かす
 win.mainloop()
